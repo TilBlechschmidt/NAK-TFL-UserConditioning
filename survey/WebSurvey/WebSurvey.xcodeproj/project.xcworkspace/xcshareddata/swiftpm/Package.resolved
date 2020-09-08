@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BitByteData",
+        "repositoryURL": "https://github.com/tsolomko/BitByteData",
+        "state": {
+          "branch": null,
+          "revision": "3ee55b113ae52d5c1f4cbec0ed4eae613dcd7eff",
+          "version": "1.4.3"
+        }
+      },
+      {
+        "package": "ShowTime",
+        "repositoryURL": "https://github.com/KaneCheshire/ShowTime.git",
+        "state": {
+          "branch": null,
+          "revision": "f173b9b7bbc556c09708455022c6087a6916e507",
+          "version": "2.5.2"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "SWCompression",
+        "repositoryURL": "https://github.com/tsolomko/SWCompression/",
+        "state": {
+          "branch": null,
+          "revision": "f62eadc6b2201d239c5c2eeeb8144fcea8c9d40e",
+          "version": "4.5.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
