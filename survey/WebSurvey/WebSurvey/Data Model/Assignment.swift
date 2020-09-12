@@ -12,4 +12,5 @@ struct Assignment: Identifiable {
     let task: String
     let help: String
     let solutionLabel: String
+    let keyboardType: UIKeyboardType
 }

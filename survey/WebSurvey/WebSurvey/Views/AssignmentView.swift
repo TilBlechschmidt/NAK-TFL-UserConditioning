@@ -128,17 +128,18 @@ struct AssignmentView: View {
             )
             .sheet(isPresented: $solutionInputOpen, content: {
                 VStack {
-                    Text("#\(number)").font(.title).foregroundColor(Color.secondary)
+                    Text("#\(self.number)").font(.title).foregroundColor(Color.secondary)
                     Text("Aufgabe").font(.largeTitle)
                     Divider()
                         .frame(maxWidth: 300)
                         .padding(.bottom)
-                    Text(assignment.task)
+                    Text(self.assignment.task)
                         .font(.headline)
                         .padding(.bottom)
                     
-                    TextField(assignment.solutionLabel, text: $solution)
+                    TextField(self.assignment.solutionLabel, text: self.$solution)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(self.assignment.keyboardType)
                         .frame(maxWidth: 350)
                         .padding()
                     
@@ -159,7 +160,7 @@ struct AssignmentView: View {
                     Button("Abbrechen", action: { self.solutionInputOpen = false })
                         .font(.system(size: 15, weight: .regular, design: .default))
                         .frame(maxWidth: 350)
-                        .padding([.leading, .trailing])
+                        .padding([.leading, .trailing, .bottom])
                 }
             })
     }

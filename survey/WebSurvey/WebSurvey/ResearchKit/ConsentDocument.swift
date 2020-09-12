@@ -12,7 +12,7 @@ public var ConsentDocument: ORKConsentDocument {
     let consentDocument = ORKConsentDocument()
   
     let overviewSection = ORKConsentSection(type: .overview)
-    overviewSection.summary = "Es folgt eine kurze Umfrage zum Nutzerverhalten im Internet, diese wird im Rahmen einer Transferleistung an der Nordakademie Elmshorn im Bereich der Angewandten Informatik durchgeführt.\n\nDies ist die zweite Umfrage zu diesem Thema.\n\nIch bedanke mich im voraus für die Teilnahme an der Umfrage! Dein Beitrag hilft bei der Forschung in diesem Bereich 😇"
+    overviewSection.summary = "Es folgt eine kurze Umfrage zum Nutzerverhalten im Internet. Diese wird im Rahmen einer Transferleistung an der Nordakademie Elmshorn im Bereich der Angewandten Informatik durchgeführt.\n\nDies ist die zweite Umfrage zu diesem Thema.\n\nIch bedanke mich im voraus für die Teilnahme an der Umfrage! Dein Beitrag hilft bei der Forschung in diesem Bereich 😇"
     
     let dataGatheringSection = ORKConsentSection(type: .dataGathering)
     dataGatheringSection.summary = "Während der Umfrage werden persönliche Daten gesammelt, um dich zum Zweck der Auswertung in eine demografische Gruppe einordnen zu können. Solltest du während der Umfrage nicht einverstanden sein die gefragten Daten zu teilen, breche die Umfrage bitte durch die Schaltfläche oben rechts ab."
