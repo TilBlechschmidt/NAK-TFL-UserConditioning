@@ -26,19 +26,35 @@
             
             /* Modal Content */
             .modal-content {
+                border-radius: 10px;
                 background-color: #fefefe;
                 margin: auto;
                 padding: 20px;
                 border: 1px solid #888;
                 width: 80%;
+                max-width: 500px;
+                
+                text-shadow: rgba(0,0,0,.01) 0 0 1px;
+                font-smooth: always;
+                -webkit-font-smoothing: antialiased;
+                font-family: BlinkMacSystemFont, -apple-system, "Segoe UI",
+                Roboto, "Oxygen-Sans", Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+                "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+                "Segoe UI Emoji", "Segoe UI Symbol" !important;
             }
         
-            #accept {
+            #buttonRow {
                 display: flex;
                 justify-content: flex-end;
             }
         
-            button {
+            .textButton {
+                border: none;
+                background: none;
+                text-decoration: underline;
+            }
+        
+            .bigButton {
                 background-color: #e48f96;
                 border: none;
                 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -47,6 +63,10 @@
                 padding: 10px 16px;
                 color: #ffffff;
                 cursor: pointer;
+            }
+        
+            .textBox {
+                padding: 1em;
             }
         </style>
         <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
@@ -60,9 +80,18 @@
         <div id="myModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-                <p>We totally value your privacy and don't want to screw you over!</p>
-                <div id="accept">
-                    <button onclick="hideModal()">Accept</button>
+                <div style="display: flex; padding: 2em;">
+                    <div style="flex-grow: 1"></div>
+                    <img src="https://www.dcuk.com/image/catalog/logo.jpg"></img>
+                    <div style="flex-grow: 1"></div>
+                </div>
+                <p class="textBox">
+                    To provide the best experiences, <strong>we</strong> and our partners require your kidney. Consenting to the use of it will allow us and our partners to process personal data such as browsing behaviour or unique IDs on this site. You also agree to provide us with a sample of your genetic sequence for later use. Not consenting or withdrawing consent, may adversely affect certain features and functions, no refunds. For further details, consult our <strong>privacy policy</strong>.
+                </p>
+                <div id="buttonRow">
+                    <button onclick="hideModal()" class="textButton">Reject</button>
+                    <div style="flex-grow: 1"></div>
+                    <button onclick="hideModal()" class="bigButton">Accept</button>
                 </div>
             </div>
         </div>

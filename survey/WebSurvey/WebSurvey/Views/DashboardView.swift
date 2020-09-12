@@ -58,7 +58,7 @@ struct DashboardView: View {
                     Text("Neue Umfrage")
                         .font(.system(.largeTitle))
                         .padding()
-                    Text("Um eine neue Umfrage zu starten, klicke den Button unter diesem Text und gib dein Tablet an die Person weiter, welche teilnehmen möchte.")
+                    Text("Um eine neue Umfrage zu starten, klicke den Button unter diesem Text und gib dein Tablet an die Person weiter, welche teilnehmen möchte. Stelle sicher, dass du eine stabile Internetverbindung hast!")
                         .frame(maxWidth: 350)
                         .padding()
                     Button("Umfrage starten", action: startSurvey).padding()

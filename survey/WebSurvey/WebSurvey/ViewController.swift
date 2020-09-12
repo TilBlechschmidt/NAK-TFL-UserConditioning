@@ -64,6 +64,8 @@ extension ViewController: ORKTaskViewControllerDelegate {
             DispatchQueue.main.async {
                 self.showAlert(title: "Survey failed", message: "The survey was unable to continue due to the following error:\n\n\(error.localizedDescription)\n\nIf the problem persists, please contact the author.")
             }
+        } else {
+            taskViewController.currentStepViewController?.showActivityIndicator(inContinueButton: true)
         }
 
         if let recorder = activeRecorder {
@@ -73,14 +75,18 @@ extension ViewController: ORKTaskViewControllerDelegate {
                 if $0 == .saving {
                     print("Saving \(Date())")
                 } else if $0 == .finished {
-                    do {
-                        _ = try taskViewController.result.archive(deleteOriginal: false)
-                    } catch {
+                    DispatchQueue.global().async {
+                        do {
+                            _ = try taskViewController.result.archive(deleteOriginal: false)
+                        } catch {
+                            DispatchQueue.main.async {
+                                self.showAlert(title: "Survey failed", message: "The survey was unable to continue due to the following error:\n\n\(error.localizedDescription)\n\nIf the problem persists, please contact the author.")
+                            }
+                        }
                         DispatchQueue.main.async {
-                            self.showAlert(title: "Survey failed", message: "The survey was unable to continue due to the following error:\n\n\(error.localizedDescription)\n\nIf the problem persists, please contact the author.")
+                            self.dismissSurvey(taskViewController)
                         }
                     }
-                    self.dismissSurvey(taskViewController)
                 }
             }
         } else {

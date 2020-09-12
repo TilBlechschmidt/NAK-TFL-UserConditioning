@@ -10,9 +10,9 @@ import ResearchKit
 
 var DemographicsStep: ORKFormStep {
     let step = ORKFormStep(identifier: "demographics")
-    step.title = "Demografie" // NSLocalizedString("Something", comment: "")
+    step.title = "Demografie"
     step.isOptional = false
-        
+    
     let occupationAnswerFormat = ORKTextChoiceAnswerFormat(style: .singleChoice, textChoices: [
         ORKTextChoice(text: "Schüler", value: "Schüler" as NSCoding & NSCopying & NSObjectProtocol),
         ORKTextChoice(text: "Student / Auszubildender", value: "Student" as NSCoding & NSCopying & NSObjectProtocol),
@@ -28,17 +28,40 @@ var DemographicsStep: ORKFormStep {
     let knowledgeQuestionItem = ORKFormItem(identifier: "knowledge", text: "Computerkenntnisse 💻", answerFormat: knowledgeAnswerFormat)
     knowledgeQuestionItem.detailText = "Siehst du dich eher als ein Technikneanderthaler, der sich fragt was diese Computer eigentlich sind, oder eher als ein Software-Entwickler mit weitreichendem Informatikwissen?"
     
-    let privacyAnswerFormat = ORKScaleAnswerFormat(maximumValue: 6, minimumValue: 1, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "Datenschutz", minimumValueDescription: "Komfort")
-    privacyAnswerFormat.shouldHideSelectedValueLabel = true
-    privacyAnswerFormat.shouldHideRanges = true
-    let privacyQuestionItem = ORKFormItem(identifier: "privacy", text: "Privatsphäre & Datenschutz 🔒", answerFormat: privacyAnswerFormat)
-    privacyQuestionItem.detailText = "Legst du eher Wert auf den Schutz deiner persönlichen Daten oder akzeptierst du einige Einbußen für einen erhöhten Komfort?"
-    
     step.formItems = [
         occupationQuestionItem,
         itWorkplaceQuestionItem,
-        knowledgeQuestionItem,
-        privacyQuestionItem
+        knowledgeQuestionItem
+    ]
+    
+    step.formItems?.forEach { $0.isOptional = false }
+    
+    return step
+}
+
+var SurveyActivityQuestionStep: ORKFormStep {
+    let step = ORKFormStep(identifier: "surveyActivity")
+    step.title = "Datenschutzbewusstsein"
+    step.isOptional = false
+    
+    let dataPrivacyAnswerFormat = ORKScaleAnswerFormat(maximumValue: 10, minimumValue: 1, defaultValue: 3, step: 1, vertical: false)
+    let dataPrivacyQuestionItem = ORKFormItem(identifier: "dataPrivacyImportance", text: "Wie wichtig ist dir Datenschutz? 🔒", answerFormat: dataPrivacyAnswerFormat)
+    dataPrivacyQuestionItem.detailText = "Ist dir der Schutz deiner Privatsphäre wichtig und wenn ja, wie viel Wert legst du darauf?"
+    
+    let gdprQuestionItem = ORKFormItem(identifier: "gdprImprovement", text: "Funktioniert die DSGVO? ⚖️", answerFormat: ORKBooleanAnswerFormat())
+    gdprQuestionItem.detailText = "Hast du das Gefühl, dass deine persönlichen Daten durch die DSGVO per Gesetz besser geschützt sind als zuvor?"
+    
+    let considersPopupsQuestionItem = ORKFormItem(identifier: "considersPopups", text: "Achtest du explizit auf den Inhalt von Cookie-Popups? 🔍", answerFormat: ORKBooleanAnswerFormat(yesString: "Konfigurieren", noString: "Loswerden"))
+    considersPopupsQuestionItem.detailText = "Konfigurierst du die Cookie-Einstellungen auf Websites häufig manuell oder willst du das Popup einfach loswerden?"
+    
+    let noticedBogusModalQuestionItem = ORKFormItem(identifier: "noticedBogusText", text: "Ist dir aufgefallen, dass du deine linke Niere verkauft hast? 💰", answerFormat: ORKBooleanAnswerFormat(yesString: "Ja 😏", noString: "Nein 😳"))
+    noticedBogusModalQuestionItem.detailText = "Eines der DSGVO Popups beinhaltete einen künstlichen Text, der dich das Recht an deine linke Niere hat abtreten lassen!"
+        
+    step.formItems = [
+        dataPrivacyQuestionItem,
+        gdprQuestionItem,
+        considersPopupsQuestionItem,
+        noticedBogusModalQuestionItem
     ]
     
     step.formItems?.forEach { $0.isOptional = false }
@@ -49,7 +72,7 @@ var DemographicsStep: ORKFormStep {
 var ContactDetailsStep: ORKFormStep {
     let step = ORKFormStep(identifier: "contactDetails")
     step.title = "Zusendung der Ergebnisse"
-    step.text = "Diese Umfrage ist Teil einer zweiteiligen Serie von Forschungen, dessen Kernthema erst später veröffentlicht um eine Verfälschung der Ergebnisse zu vermeiden.\n\nSolltest du Interesse daran haben an der zweiten Umfrage teilzunehmen oder die Forschungsergebnisse zugesendet zu bekommen, kannst du hier deine Kontaktdaten eintragen. Wir kontaktieren dich, sobald Ergebnisse vorliegen!"
+    step.text = "Diese Umfrage ist Teil einer zweiteiligen Serie von Forschungen, dessen Kernthema erst später veröffentlicht um eine Verfälschung der Ergebnisse zu vermeiden.\n\nSolltest du Interesse an den Forschungsergebnissen haben, kannst du hier deine Kontaktdaten eintragen. Wir kontaktieren dich, sobald Ergebnisse vorliegen!"
     step.isOptional = true
     
     let formItem = ORKFormItem(identifier: "email", text: "E-Mail Adresse", answerFormat: ORKEmailAnswerFormat())

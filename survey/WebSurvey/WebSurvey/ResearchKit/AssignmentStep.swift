@@ -45,6 +45,8 @@ class AssignmentStepViewController: ORKActiveStepViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.backButtonItem = UIBarButtonItem()
+        
         let assignmentStep = (step as! AssignmentStep)
         let assignment = assignmentStep.assigment
         let overview = AssignmentOverview(number: assignmentStep.index, assignment: assignment, onSubmit: {
@@ -61,10 +63,15 @@ class AssignmentStepViewController: ORKActiveStepViewController {
     override func start() {
         super.start()
         
-        let assignment = (step as! AssignmentStep).assigment
-        let rootView = AssignmentWrapperView(assignment: assignment, onSubmit: {
+        let assignmentStep = (step as! AssignmentStep)
+        let assignment = assignmentStep.assigment
+        let rootView = AssignmentWrapperView(number: assignmentStep.index, assignment: assignment, onSubmit: {
+            // Dismiss solution modal
             self.assignmentViewController?.dismiss(animated: true, completion: {
-                self.finish()
+                // Dismiss browser
+                self.assignmentViewController?.dismiss(animated: true, completion: {
+                    self.finish()
+                })
             })
         })
         

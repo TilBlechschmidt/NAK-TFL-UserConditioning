@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 
 struct AssignmentWrapperView: View {
+    let number: Int
     let assignment: Assignment
     let onSubmit: () -> Void
     
@@ -16,11 +17,12 @@ struct AssignmentWrapperView: View {
     @State var solution = ""
     
     var body: some View {
-        AssignmentView(assignment: assignment, onSubmit: onSubmit, solutionInputOpen: $solutionInputOpen, solution: $solution)
+        AssignmentView(number: number, assignment: assignment, onSubmit: onSubmit, solutionInputOpen: $solutionInputOpen, solution: $solution)
     }
 }
 
 struct AssignmentView: View {
+    let number: Int
     let assignment: Assignment
     let onSubmit: () -> Void
     let bookmarks = defaultBookmarks
@@ -90,19 +92,19 @@ struct AssignmentView: View {
                 }
             }
             
-            if solutionInputOpen {
-                HStack {
-                    Spacer()
-                    VStack {
-                        TextField(assignment.solutionLabel, text: $solution)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .frame(maxWidth: 350)
-                        Button("Abschicken", action: { self.onSubmit() })
-                    }
-                    Spacer()
-                }
-                    .padding(.bottom, 10)
-            }
+//            if solutionInputOpen {
+//                HStack {
+//                    Spacer()
+//                    VStack {
+//                        TextField(assignment.solutionLabel, text: $solution)
+//                            .textFieldStyle(RoundedBorderTextFieldStyle())
+//                            .frame(maxWidth: 350)
+//                        Button("Abschicken", action: { self.onSubmit() })
+//                    }
+//                    Spacer()
+//                }
+//                    .padding(.bottom, 10)
+//            }
 
             WebView(url: $url, progress: $progress, isLoading: $isLoading, navigator: navigator)
                 .edgesIgnoringSafeArea(.bottom)
@@ -124,13 +126,49 @@ struct AssignmentView: View {
                     .fill(Color("barBackground"))
                     .edgesIgnoringSafeArea(.all)
             )
+            .sheet(isPresented: $solutionInputOpen, content: {
+                VStack {
+                    Text("#\(number)").font(.title).foregroundColor(Color.secondary)
+                    Text("Aufgabe").font(.largeTitle)
+                    Divider()
+                        .frame(maxWidth: 300)
+                        .padding(.bottom)
+                    Text(assignment.task)
+                        .font(.headline)
+                        .padding(.bottom)
+                    
+                    TextField(assignment.solutionLabel, text: $solution)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .frame(maxWidth: 350)
+                        .padding()
+                    
+                    Button(action: self.onSubmit, label: {
+                        HStack {
+                            Spacer()
+                            Text("Abschicken")
+                                .font(.system(size: 15, weight: .regular, design: .default))
+                                .foregroundColor(.white)
+                            Spacer()
+                        }.padding(10)
+                    })
+                        .background(Color.blue)
+                        .cornerRadius(3.0)
+                        .frame(maxWidth: 350)
+                        .padding()
+                    
+                    Button("Abbrechen", action: { self.solutionInputOpen = false })
+                        .font(.system(size: 15, weight: .regular, design: .default))
+                        .frame(maxWidth: 350)
+                        .padding([.leading, .trailing])
+                }
+            })
     }
 }
 
-struct AssignmentView_Previews: PreviewProvider {
-    static let assignment = Assignment(task: "Search for some random article on Heise!", help: "To visit Heise, open the bookmarks. From there just open a random article to complete this assignment!", solutionLabel: "Author name")
-    
-    static var previews: some View {
-        AssignmentView(assignment: assignment, onSubmit: {}, solutionInputOpen: .constant(true), solution: .constant("Test"))
-    }
-}
+//struct AssignmentView_Previews: PreviewProvider {
+//    static let assignment = Assignment(task: "Search for some random article on Heise!", help: "To visit Heise, open the bookmarks. From there just open a random article to complete this assignment!", solutionLabel: "Author name")
+//    
+//    static var previews: some View {
+//        AssignmentView(assignment: assignment, onSubmit: {}, solutionInputOpen: .constant(true), solution: .constant("Test"))
+//    }
+//}
