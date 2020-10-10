@@ -1,414 +1,81 @@
 [
     {
-        "type": "webpage",
-        "URL": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002L0058:en:HTML",
-        "id": "ePrivacy-2002",
+        "DOI": "10.1901/jaba.1987.20-361",
+        "URL": "https://doi.org/10.1901%2Fjaba.1987.20-361",
+        "author": [
+            {
+                "family": "Iwata",
+                "given": "Brian A."
+            }
+        ],
+        "container-title": "Journal of Applied Behavior Analysis",
+        "id": "negative-reinforcement",
+        "issue": "4",
         "issued": {
             "date-parts": [
                 [
-                    2002,
-                    7,
+                    1987,
                     12
                 ]
             ]
         },
-        "accessed": {
-            "date-parts": [
-                [
-                    2020,
-                    9,
-                    2
-                ]
-            ]
-        },
-        "title": "Directive 2002/58/EC of the European Parliament and of the Council"
+        "page": "361-378",
+        "publisher": "Wiley",
+        "title": "NEGATIVE REINFORCEMENT IN APPLIED BEHAVIOR ANALYSIS: AN EMERGING TECHNOLOGY",
+        "title-short": "NEGATIVE REINFORCEMENT IN APPLIED BEHAVIOR ANALYSIS",
+        "type": "article-journal",
+        "volume": "20"
     },
     {
-        "URL": "https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32009L0136&from=EN",
-        "id": "ePrivacy-2009",
-        "issued": {
-            "date-parts": [
-                [
-                    2009
-                ]
-            ]
-        },
-        "accessed": {
-            "date-parts": [
-                [
-                    2020,
-                    9,
-                    2
-                ]
-            ]
-        },
-        "title": "Richtlinie 2009/136/EG des Europäischen Parlaments und des Rates",
-        "type": "webpage"
-    },
-    {
-        "URL": "http://data.europa.eu/eli/reg/2016/679/oj",
-        "id": "gdpr-recitation-32",
-        "issued": {
-            "date-parts": [
-                [
-                    2016,
-                    4
-                ]
-            ]
-        },
-        "accessed": {
-            "date-parts": [
-                [
-                    2020,
-                    9,
-                    2
-                ]
-            ]
-        },
-        "title": "Regulation (eu) 2016/679 of the European Parliament and of the Council",
-        "type": "webpage"
-    },
-    {
-        "URL": "https://www.lto.de/recht/hintergruende/h/bgh-cookies-eugh-einwilligung-telemediengesetz-datenschutz-werbung/",
+        "DOI": "10.1080/00221309.1937.9917951",
+        "URL": "https://doi.org/10.1080%2F00221309.1937.9917951",
         "author": [
             {
-                "family": "Nebel",
-                "given": "Jens"
+                "family": "Skinner",
+                "given": "B. F."
             }
         ],
-        "id": "banner-button-not-sufficient",
+        "container-title": "The Journal of General Psychology",
+        "id": "operant-conditioning-bfskinner",
+        "issue": "1",
         "issued": {
             "date-parts": [
                 [
-                    2020,
-                    5
+                    1937,
+                    1
                 ]
             ]
         },
-        "accessed": {
-            "date-parts": [
-                [
-                    2020,
-                    9,
-                    2
-                ]
-            ]
-        },
-        "title": "Cookie-Einwilligung muss aktiv angekreuzt werden",
-        "type": "webpage"
+        "page": "272-279",
+        "publisher": "Informa UK Limited",
+        "title": "Two Types of Conditioned Reflex: A Reply to Konorski and Miller",
+        "type": "article-journal",
+        "volume": "16"
     },
     {
-        "URL": "https://www.lto.de/recht/hintergruende/h/eugh-c-673-17-cookies-aktiv-einwilligung/",
+        "DOI": "10.1016/0023-9690(82)90015-7",
+        "URL": "https://doi.org/10.1016%2F0023-9690%2882%2990015-7",
         "author": [
             {
-                "family": "Nebel",
-                "given": "Jens"
+                "family": "Navarick",
+                "given": "Douglas J"
             }
         ],
-        "id": "tmg-opt-out-news",
+        "container-title": "Learning and Motivation",
+        "id": "impulsive-humans-under-reinforcement",
+        "issue": "3",
         "issued": {
             "date-parts": [
                 [
-                    2019,
-                    9
-                ]
-            ]
-        },
-        "accessed": {
-            "date-parts": [
-                [
-                    2020,
-                    9,
-                    2
-                ]
-            ]
-        },
-        "title": "Cookies nur mit Einwilligung?",
-        "type": "webpage"
-    },
-    {
-        "URL": "http://www.gesetze-im-internet.de/tmg/__13.html",
-        "id": "tmg-art13",
-        "title": "Telemediengesetz vom 26. Februar 2007 (bgbl. I s. 179)",
-        "issued": {
-            "date-parts": [
-                [
-                    2007,
-                    2,
-                    26
-                ]
-            ]
-        },
-        "accessed": {
-            "date-parts": [
-                [
-                    2020,
-                    9,
-                    2
-                ]
-            ]
-        },
-        "type": "webpage"
-    },
-    {
-        "URL": "https://rufposten.de/blog/2019/06/03/facebook-tracker-auf-deutschen-medienseiten/",
-        "author": [
-            {
-                "family": "Eberl",
-                "given": "Matthias"
-            }
-        ],
-        "id": "facebook-trackers",
-        "issued": {
-            "date-parts": [
-                [
-                    2019,
-                    3
-                ]
-            ]
-        },
-        "accessed": {
-            "date-parts": [
-                [
-                    2020,
-                    9,
-                    2
-                ]
-            ]
-        },
-        "title": "Facebook trackt Nutzer auf drei Viertel aller deutschen Nachrichtenseiten",
-        "type": "webpage"
-    },
-    {
-        "URL": "https://edps.europa.eu/data-protection/data-protection/legislation/history-general-data-protection-regulation_en",
-        "id": "gdpr-history",
-        "publisher": "European data protection supervisor",
-        "accessed": {
-            "date-parts": [
-                [
-                    2020,
-                    9,
-                    2
-                ]
-            ]
-        },
-        "title": "The history of the General Data Protection Regulation",
-        "type": "webpage"
-    },
-    {
-        "URL": "https://web.archive.org/web/20120622115408/http://ec.europa.eu/justice/policies/privacy/docs/wpdocs/2010/wp171_en.pdf",
-        "id": "ePrivacy-changes",
-        "issued": {
-            "date-parts": [
-                [
-                    2010,
-                    2
-                ]
-            ]
-        },
-        "accessed": {
-            "date-parts": [
-                [
-                    2020,
-                    9,
-                    2
-                ]
-            ]
-        },
-        "publisher": "Article 29 Data Protection Working Party",
-        "title": "Opinion 2/2010 on online behavioural advertising",
-        "type": "paper-conference"
-    },
-    {
-        "URL": "https://web.archive.org/web/20111017120748/http://ec.europa.eu/justice/data-protection/article-29/documentation/other-document/files/2011/20110803_letter_to_oba_annexes.pdf",
-        "annote": "Statement that the ePrivacy stuff isn’t really doing what it was supposed to do.",
-        "id": "ePrivacy-ineffective",
-        "issued": {
-            "date-parts": [
-                [
-                    2011,
+                    1982,
                     8
                 ]
             ]
         },
-        "publisher": "Article 29 Data Protection Working Party",
-        "title": "Letter to the online advertising industry",
-        "type": "paper-conference"
-    },
-    {
-        "URL": "https://web.archive.org/web/20120629200510/http://pewinternet.org/Reports/2012/Search-Engine-Use-2012.aspx",
-        "author": [
-            {
-                "family": "Purcell",
-                "given": "Kristen"
-            },
-            {
-                "family": "Brenner",
-                "given": "Joanna"
-            },
-            {
-                "family": "Rainie",
-                "given": "Lee"
-            }
-        ],
-        "id": "survey-4",
-        "issued": {
-            "date-parts": [
-                [
-                    2012,
-                    3
-                ]
-            ]
-        },
-        "publisher": "Pew Research Center",
-        "title": "Search engine use 2012",
-        "type": "paper-conference"
-    },
-    {
-        "URL": "http://truste.com/ad-privacy/TRUSTe-2011-Consumer-Behavioral-Advertising-Survey-Results",
-        "id": "survey-3",
-        "issued": {
-            "date-parts": [
-                [
-                    2011,
-                    7
-                ]
-            ]
-        },
-        "publisher": "TRUSTe and Harris Interactive",
-        "title": "Privacy and online behavioral advertising",
-        "type": "paper-conference"
-    },
-    {
-        "URL": "https://web.archive.org/web/20120202002018/http://gallup.com/poll/File/145334/Internet_Ads_Dec_21_2010.pdf",
-        "publisher": "Gallup",
-        "id": "survey-2",
-        "issued": {
-            "date-parts": [
-                [
-                    2010,
-                    12
-                ]
-            ]
-        },
-        "title": "USA TODAY/GALLUP POLL",
-        "type": "paper-conference"
-    },
-    {
-        "URL": "https://repository.upenn.edu/cgi/viewcontent.cgi?article=1138&context=asc_papers",
-        "author": [
-            {
-                "family": "Turow",
-                "given": "Joseph"
-            },
-            {
-                "family": "King",
-                "given": "Jennifer"
-            },
-            {
-                "family": "Hoofnatle",
-                "given": "Chris Jay"
-            },
-            {
-                "family": "Bleakley",
-                "given": "Amy"
-            },
-            {
-                "family": "Hennessy",
-                "given": "Michael"
-            }
-        ],
-        "id": "survey-1",
-        "issued": {
-            "date-parts": [
-                [
-                    2009,
-                    9
-                ]
-            ]
-        },
-        "title": "Americans reject tailored advertising and three activities that enable it",
-        "type": "paper-conference"
-    },
-    {
-        "DOI": "10.1109/SP.2012.47",
-        "ISSN": "2375-1207",
-        "abstract": "In the early days of the web, content was designed and hosted by a single person, group, or organization. No longer. Webpages are increasingly composed of content from myriad unrelated \"third-party\" websites in the business of advertising, analytics, social networking, and more. Third-party services have tremendous value: they support free content and facilitate web innovation. But third-party services come at a privacy cost: researchers, civil society organizations, and policymakers have increasingly called attention to how third parties can track a user’s browsing activities across websites. This paper surveys the current policy debate surrounding third-party web tracking and explains the relevant technology. It also presents the FourthParty web measurement platform and studies we have conducted with it. Our aim is to inform researchers with essential background and tools for contributing to public understanding and policy debates about web tracking.",
-        "author": [
-            {
-                "family": "Mayer",
-                "given": "Jonathan R."
-            },
-            {
-                "family": "Mitchell",
-                "given": "John C."
-            }
-        ],
-        "container-title": "2012 IEEE Symposium on Security and Privacy",
-        "publisher": "IEEE",
-        "id": "website-survey",
-        "issued": {
-            "date-parts": [
-                [
-                    2012,
-                    5
-                ]
-            ]
-        },
-        "keyword": "data privacy;Web sites;third-party Web tracking;Web pages;third-party Web sites;advertising;analytics;social networking;Web innovation;privacy;user browsing activity tracking;fourth party Web measurement platform;Privacy;Advertising;Companies;Security;History;Economics;Web privacy;third-party tracking;Do Not Track",
-        "page": "413-427",
-        "title": "Third-Party Web Tracking: Policy and Technology",
-        "title-short": "Third-party web tracking",
-        "type": "paper-conference"
-    },
-    {
-        "type": "webpage",
-        "id": "race-to-gdpr",
-        "URL": "https://iapp.org/media/pdf/resource_center/Ponemon_race-to-gdpr.pdf",
-        "publisher": "Ponemon Institute",
-        "issued": {
-            "date-parts": [
-                [
-                    2018,
-                    4
-                ]
-            ]
-        },
-        "title": "The race to GDPR: A study of companies in the United States & Europe",
-        "accessed": {
-            "date-parts": [
-                [
-                    2020,
-                    8,
-                    20
-                ]
-            ]
-        }
-    },
-    {
-        "DOI": "10.1145/2639189.2670264",
-        "URL": "https://doi.org/10.1145%2F2639189.2670264",
-        "author": [
-            {
-                "family": "Gama",
-                "given": "Sandra"
-            },
-            {
-                "family": "Gonçalves",
-                "given": "Daniel"
-            }
-        ],
-        "container-title": "Proceedings of the 8th Nordic Conference on Human-Computer Interaction Fun, Fast, Foundational - NordiCHI 14",
-        "id": "color-blending",
-        "issued": {
-            "date-parts": [
-                [
-                    2014
-                ]
-            ]
-        },
-        "publisher": "ACM Press",
-        "title": "Studying the perception of color components relative amounts in blended colors",
-        "type": "paper-conference"
+        "page": "361-377",
+        "publisher": "Elsevier BV",
+        "title": "Negative reinforcement and choice in humans",
+        "type": "article-journal",
+        "volume": "13"
     }
 ]
