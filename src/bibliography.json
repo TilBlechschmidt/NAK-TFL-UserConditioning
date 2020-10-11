@@ -77,5 +77,140 @@
         "title": "Negative reinforcement and choice in humans",
         "type": "article-journal",
         "volume": "13"
+    },
+    {
+        "URL": "https://moz.com/top500",
+        "id": "moz-list",
+        "issued": {
+            "date-parts": [
+                [
+                    2020
+                ]
+            ]
+        },
+        "accessed": {
+            "date-parts": [
+                [
+                    2020,
+                    10,
+                    10
+                ]
+            ]
+        },
+        "title": "The Moz Top 500 Websites",
+        "type": "webpage"
+    },
+    {
+        "DOI": "10.5281/ZENODO.4047969",
+        "URL": "https://zenodo.org/record/4047969",
+        "author": [
+            {
+                "family": "Blechschmidt",
+                "given": "Til"
+            }
+        ],
+        "id": "tfl-3",
+        "issued": {
+            "date-parts": [
+                [
+                    2020,
+                    9,
+                    24
+                ]
+            ]
+        },
+        "publisher": "Zenodo",
+        "title": "Effect of cookie banner design on user click-through rate",
+        "type": "article-journal"
+    },
+    {
+        "type": "webpage",
+        "id": "race-to-gdpr",
+        "URL": "https://iapp.org/media/pdf/resource_center/Ponemon_race-to-gdpr.pdf",
+        "publisher": "Ponemon Institute",
+        "issued": {
+            "date-parts": [
+                [
+                    2018,
+                    4
+                ]
+            ]
+        },
+        "title": "The race to GDPR: A study of companies in the United States & Europe",
+        "accessed": {
+            "date-parts": [
+                [
+                    2020,
+                    10,
+                    11
+                ]
+            ]
+        }
+    },
+    {
+        "URL": "http://data.europa.eu/eli/reg/2016/679/oj",
+        "id": "gdpr-recitation-32",
+        "issued": {
+            "date-parts": [
+                [
+                    2016,
+                    4
+                ]
+            ]
+        },
+        "accessed": {
+            "date-parts": [
+                [
+                    2020,
+                    9,
+                    2
+                ]
+            ]
+        },
+        "title": "Regulation (eu) 2016/679 of the European Parliament and of the Council",
+        "type": "webpage"
+    },
+    {
+        "URL": "https://www.statista.com/statistics/1066424/reading-gdpr-conditions-before-consenting-in-norway-by-age/",
+        "id": "few-users-read-conditions",
+        "publisher": "OsloMet; SIFO",
+        "issued": {
+            "date-parts": [
+                [
+                    2018,
+                    12
+                ]
+            ]
+        },
+        "title": "Trust and vulnerability online: Consumers’ practices and considerations related to GDPR in Norway 2018",
+        "author": [
+            {
+                "family": "Tankovska",
+                "given": "H"
+            }
+        ],
+        "page": "37",
+        "type": "article-journal"
+    },
+    {
+        "id": "gdpr-drawbacks",
+        "author": [
+            {
+                "family": "Bourne",
+                "given": "Vanson"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    2017,
+                    5,
+                    18
+                ]
+            ]
+        },
+        "title": "Opinion of IT decision makers on the drawbacks of the EU General Data Protection Regulations (GDPR) for citizens in Germany in 2017",
+        "publisher": "Varonis",
+        "type": "article-journal"
     }
 ]

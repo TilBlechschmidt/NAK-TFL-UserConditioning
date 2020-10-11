@@ -43,12 +43,14 @@
   - Countless ways to build a website with no right way
   - Number of legal requirements which differ per country
     - Yields region blocked pages
-- Has become hard to adhere to all regulations [TODO cite source regarding money companies spend on GDPR]
+- Has become hard to adhere to all regulations [@race-to-gdpr]
+  - Companies mainly have to invest into new technologies to become compliant
+  - Evaluating compliance is second down the list
 - GDPR introduced explicit opt-in as opposed to opt-out
   - Interest shifted from making users not notice opt-out
   - Now its about tricking them into opting in
   - Not even their fault, this kind of data is valuable for a business to maintain its online presence and stay competitive
-- Cite GDPR which intends for users to establish a freely given, specific, informed and unambiguous indication!
+- Cite GDPR which intends for users to establish a freely given, specific, informed and unambiguous indication! [@gdpr-recitation-32]
 - Research questions
   - How are users being tricked and manipulated to opt-in?
   - Are users consciously making decisions as the GDPR intended to?

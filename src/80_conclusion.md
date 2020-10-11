@@ -1,22 +1,13 @@
 # Conclusion
 
-- Key takeaways
-  - TODO
-  - Conditioning might not have been intentional by legislation makers, websites are profiting from it, original goal is being missed
+In this research paper we have covered how the principle of operant conditioning works and what negative reinforcement is. Furthermore we have analysed the types of consent mechanisms present on the 300 most popular websites and developed a theory on how they could be used to condition users of the web. A survey has been designed and conducted with 26 participants which revealed evidence for conditioning taking place in the real world.
 
-- More research
-  - Motivation for accepting policies (manipulation, accepting the tradeoff, not caring, "my data is unimportant" etc.)
+Additionally, the survey showed that most users do not stick to one strategy in dealing with privacy policies — either accepting or rejecting it — and uncovered that an astonishingly low number of persons do interact with such policy notices for a prolonged period of time. Virtually no participant did discover a faked modal during the survey, showing further evidence that users are only acting based on the known and trained structure of such modals instead of reading them carefully.
 
-- Reflection and other noteworthy results
-  - Some pages take very long to load their popups (some people almost evaded it)
-  - Unstable internet connections caused some issues
-  - Most tend to press big flashy buttons
-    - Only a few actually take the time to read the buttons, even fewer actually read the content
-  - No really consistent behaviour
-  - Users still skipped questions to which they knew the answer :(
-  - Putting the trick question at the end proved useful, users were annoyed by then
-  - Survey might not 100% match
-  - Distribution method caused distractions / non-isolated / non-focused environment
-  - Data contains lots more details
-    - No time/space left to analyse them
-    - Survey design allows to pull out interesting details, but participant count is too low
+It remains questionable whether this effect of conditioning users into evading such consent workflows has been considered by the legislation in creating this policy. However, websites do profit from this phenomenon as a majority of users do not seem to act based on their preference leaving room to trick them into agreeing to share their data. This stands contrary to the original goal of the (+GDPR) to protect the users data and privacy by default. Studies conducted in 2017 have shown that only 15% of IT decision makers would support the claim that there are no drawbacks to the (+GDPR) while 28% expected it to adversely effect the customer experience [@gdpr-drawbacks]. Overall it remains to be seen whether the new law does have any positive effects in this regard or drifts off to hinder the user experience at no gain in terms of privacy due to the unforseen consequences of human psychology.
+
+An unanswered question is what the motivations for accepting tracking and data collection policies are. It could yield an insight into the reasoning behind the behavior exposed by this paper and how many users are actually aware of the permissions they give to websites. Furthermore, it remains unclear how many of the pages exhibiting no consent mechanism but are still tracking users. This could provide an outlook on how many websites are going to eventually add such consent workflows in the future, ultimately strengthening the effect of negative reinforcement.
+
+Regarding the survey, a few notable discoveries have been made. Some users did circumvent/skip questions to which they knew the answer despite it being mentioned in the introduction. It seems that this instruction was unclear or skimmed over by participants. Following up on that, some users showed signs of distraction by not interacting with the survey for a prolonged period of time. This has probably been caused by the distribution method where users are participating in an uncontrolled, potentially noisy environment. Furthermore, some users were interrupted due to unstable internet connections. However, even with a stable internet connection some websites did take a long time to fully load and present the modal. While it did not impact the survey results, it might very well cause issues in a larger survey. Lastly, it may be noted that the survey did not match a 100% natural environment due to the difference in context and tasks. It remains possible that users do behave differently under more casual and/or natural circumstances.
+
+Finally, the survey yielded vast amounts of data most of which have not been considered in this paper due to time and space restrictions. The survey design, although having some smaller flaws, did uncover interesting ways to analyse the data. However, with the low amount of participants most results had to be abandoned. Thus, it might be of interest to conduct a similar survey in the future with a slightly shifted focus and at a larger scale.

@@ -1,53 +1,31 @@
-# Why conditioning is an issue
+# User conditioning on the web
 
-- What is operant conditioning?
-- What is negative reinforcement?
-  - Experiment w/ mouse, explain positive reinforcement first with an example and then introduce the "opposite"
-    - Rats turning on the light before the stimulus is even there (with a warning light obviously)!
+To begin with we have to answer the question what operant conditioning is. In 1937 B. F. Skinner published a research paper in "The Journal of General Psychology" coining the term. His theory is used to describe how behavior is influenced by the rewards and consequences following it. [@operant-conditioning-bfskinner]
 
-- To explain why it might apply to users we have to deviate for a second!
-- Exposed to banners and stuff for a long time (REF TFL 3)
-- Websites used to be mostly accessible
-  - Banners were annoying but content was still there
-  - Access to pages was removed by GDPR banners
-  - Extra steps are necessary to reach a goal
+For the purpose of this research paper we will be limiting our scope to a more focused topic called negative reinforcement. It describes how the behavior of an operant can be influenced by introducing a negative stimuli. Skinner proposed and conducted an experiment in which he placed a rat into a cage. Then, a mild electric shock — the negative stimuli or reinforcer — was introduced. The box also contained a lever which deactivates the electricity. The rat in the experiment quickly learned to press the lever once the stimuli was introduced. Taking it one step further, a lamp was added which turned on just before the actual stimuli was activated and the operant quickly learned to press the button in response to the lamp to avoid the negative reinforcer. There is a more common version of this experiment in which food is released when the lever is pressed. This describes the opposite kind of conditioning and is called positive reinforcement. [@negative-reinforcement]
 
-- Analysis of what web pages are doing out there
-  - Reference list of top 500 domains [https://moz.com/top500](https://moz.com/top500)
-  - Take a screenshot of the first 300 (accessed from within Germany!)
-  - Manually evaluate each one
-  - Category first: Modal, Banner, Nothing, Blocked, Invalid
-  - Subcategory
-    - Info, Reject, Config
-  - Add result table
-  - Majority of pages have nothing
-    - Either due to them not using cookies or not being compliant (not tested, not important)
-    - Some were region blocked, some domains are invalid (due to things like CDNs/APIs/Certificates)
-    - Banners
-      - Only a handful provided a one-click way to reject cookies
-      - Informational banners and ones with configuration options are equally frequent
-    - Modals
-      - Two informational ones
-      - Only six one-click rejectable ones
-      - Overwhelming majority had a complex config flow requiring at least three clicks
-  - A lot of non-compliant stuff out there (Info)
-  - Many pages do not have any kind of consent mechanism
-    - Either they don't use cookies OR they are not (yet) compliant, has not been evaluated
-  - It is relatively complicated (>2 clicks) to reject cookies while it has been made simple to accept everything (1 click) — on avg!!
-  - Take exact results with a grain of salt (human monkey brain and 'only' 300 pages) but rough estimate is expected to hold
-    - It is hard to reproduce as the web changes constantly
+In order to explain why negative reinforcement might be affecting users on the web, we have to start by taking a step back. Users have been exposed to privacy policies, cookie notices and tracking consent mechanisms for a long time [@tfl-3]. However, recently there has been a fundamental change. Up till now, websites were freely accessible and such mechanisms only occupied a limited portion of the screen. This changed with recent legislation, making it mandatory to collect consent before actually tracking the visitors. To get an insight into how this affected access to websites, a small analysis will be conducted.
 
-![Privacy mechanisms of top 300 domains](src/images/website-stats.pdf){#fig:website-stats}
+First, a list of the top 300 domains has been retrieved from a large SEO contractor [@moz-list]. Since the web is changing every day, a snapshot of this list at the time of writing has been included in the accompanying GitHub repository^[Link excluded in this version of the document]. Second, each of these websites has been visited from within Europe^[To rule out any potential regional variations in the websites] and manually categorized as follows. There are categories and subcategories. Categories describe the type of consent mechanism in place (Modal, Banner, Other) and subcategories describe the subtype of mechanism. For banners and modals there are three types:
 
-- How does that relate to negative reinforcement?
-  - As mentioned earlier, used to be able to access websites somewhat unobstructed
-  - Negative reinforcer (modals) became required due to change in legislation
-  - It is expected that users want to avoid the stimuli and take evasive actions
-    - These actions are presumably the fastest way to get rid of the interruption
-    - Websites (presumably) made the deliberate choice to turn accepting all cookies into the fastest one
-      - It could very well have been designed the other way around
-      - Not proven, just an assumption.
-    - Due to the consistency in the design of modals the reinforcement effect is expected to work well (theory proved later on)
-      - Plus users have been exposed for consent mechanisms for *decades*
-  - Not an issue with cookie banners because users were not forced to interact with them but could ignore them
-    - There was no effective reinforcement going on, thus the behavior to interact with them didn't stick/develop (ref first TFL results of 55% ignore)
+**Info:** The consent mechanism is only informing the user about the collection of data and does not present a choice. Some variations may ask the user to leave the page if they do not consent.
+
+**Config:** An option to manually configure which data can be tracked is present, however users do not have the ability to reject all tracking with a single click.
+
+**Reject:** Users are presented with a direct option to reject tracking. This subtype may also include a config option but it is possible to reject with a single click.
+
+For the "Other" category there are three subcategories:
+
+**Nothing:** No consent mechanism is present. This may not indicate that the page is not tracking the user regardless.
+
+**Blocked:** The page is regionally blocked within europe, preventing access in regions where the new legislation is in effect.
+
+**Invalid:** There is no valid web-content behind the domain name. This has been the case for content delivery networks, services and other. It does not indicate that the domain has no content, just that there is no publicly visible content.
+
+![Tracking consent mechanisms of top 300 domains](src/images/website-stats.pdf){#fig:website-stats}
+
+To begin with, a word of warning: The results collected and displayed in [@fig:website-stats] have been evaluated by a single individual, have not been reviewed by others, and only include the 300 most common domains. They may only be taken as a rough estimate and may not be interpreted in detail or taken as representative for the whole web without caution or manual review!
+
+The pie chart seen in [@fig:website-stats] contains the previously mentioned categories and subcategories. The former are identified by the groups of colors (green, orange, grey) while the latter is represented by different shades of the aforementioned colors. Looking at the "Other" shard it becomes immediately obvious that over a third of all pages do not present any kind of consent mechanism or are regionally unavailable. Note that it has not been evaluated whether or not pages in this category are still tracking users. To answer this further research is required. Looking at the other two categories banners do prevail with 32% over 25% of pages with modals. However, almost half of the banners do not ask for consent but instead only inform the users that tracking takes place. With modals the story is slightly different. Two websites did solely inform the user while an overwhelming majority of modals are presenting a complex configuration menu which requires at least three clicks to reject tracking. Only six domains did provide a modal with a one-click method to do so.
+
+Looking back at operant conditioning, a quarter of all websites has become obstructed by a consent workflow out of which almost 90% make it very complicated and time consuming to visit the website without being tracked. In this instance, the consent flow can be seen as a negative stimuli which prevents the user from accessing the desired content. Research has revealed that humans are likely to prefer an immediate stimuli which only lasts for a short time period and has shown impulsive behavior while influenced by a negative reinforcer [@impulsive-humans-under-reinforcement]. This knowledge is being used by todays consent workflows which provide an easy, short route of evading the stimuli by agreeing to tracking while making it complicated and time consuming to disallow tracking. Whether or not this is a deliberate act or a conincidence is unclear. However, websites could very well have designed modals in a way which favors disallowing and makes selectively agreeing to certain tracking providers the more complex option. This not being the case on every website observed makes a strong argument for it being a deliberate choice^[Further research is required to definitively proof this]. Overall, it seems very likely that users are being influenced through negative reinforcement by the new consent mechanisms. Old, banner style consent mechanisms are less likely to have this effect since the stimulus is too weak and a majority of people are ignoring them alltogether [@tfl-3].
