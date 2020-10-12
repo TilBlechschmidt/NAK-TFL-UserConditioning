@@ -212,5 +212,21 @@
         "title": "Opinion of IT decision makers on the drawbacks of the EU General Data Protection Regulations (GDPR) for citizens in Germany in 2017",
         "publisher": "Varonis",
         "type": "article-journal"
+    },
+    {
+        "URL": "https://edps.europa.eu/data-protection/data-protection/legislation/history-general-data-protection-regulation_en",
+        "id": "gdpr-history",
+        "publisher": "European data protection supervisor",
+        "accessed": {
+            "date-parts": [
+                [
+                    2020,
+                    10,
+                    12
+                ]
+            ]
+        },
+        "title": "The history of the General Data Protection Regulation",
+        "type": "webpage"
     }
 ]
