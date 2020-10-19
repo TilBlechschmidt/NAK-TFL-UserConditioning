@@ -1,4 +1,5 @@
 # Scientific paper template
 
-This is an example README.md for your next scientific paper! The templated evolved out of the need to write TFLs at the Nordakademie but not wanting to fight with LaTeX all day. So enjoy. Documentation can be found [here](https://texnak.github.io/Science-Paper-Template-Documentation/).
+[![DOI](https://zenodo.org/badge/293918103.svg)](https://zenodo.org/badge/latestdoi/293918103)
 
+This research paper looks at how users are being conditioned to accept online privacy policies and consent to tracking.
