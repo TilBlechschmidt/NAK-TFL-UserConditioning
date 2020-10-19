@@ -1,0 +1,21 @@
+;Heise;;;UCI;;;Postillon;;;famila;;;ING-DiBa;;;Dcuk;;;Derived;;;;;;;Survey questions;;;;Demographics;;
+id;Duration;Action;Behaviour;Duration;Action;Behaviour;Duration;Action;Behaviour;Duration;Action;Behaviour;Duration;Action;Behaviour;Duration;Action;Behaviour;Total time;Accept;Reject;Accept %;Reject %;Evasive;Normal/Persistent;privacyImportance;gdprImprovement;considersPopups;noticedBogusText;occupation;itWorkplace;knowledge
+239D17E7-734C-4C1C-A0C8-CACE9F92D234;107;Accept;Evasive;69;Accept;Evasive;163;Accept;Evasive;89;Accept;Evasive;73;Accept;Evasive;76;Accept;Evasive;9,62;6;0;1;0;6;0;9;FALSE;FALSE;FALSE;Arbeitstätig;FALSE;3
+401881FB-3CE5-4EC3-86E6-E670CEEA6643;95;Accept;Evasive;88;Reject;Evasive;128;Reject;Evasive;83;Reject;Evasive;52;Accept;Evasive;67;Reject;Evasive;8,55;2;4;1/3;2/3;6;0;7;TRUE;FALSE;FALSE;Student;TRUE;8
+42176ED5-3967-4C79-9101-4AF898B68E43;55;Accept;Evasive;60;Reject;Evasive;154;Reject;Persistent;76;Reject;Normal;116;Accept;Evasive;43;Reject;Evasive;8,40;2;4;1/3;2/3;4;2;5;TRUE;FALSE;FALSE;Arbeitstätig;TRUE;6
+43F9AB54-D2C7-4CF8-9C00-4BCAEAFF94B2;52;Reject;Persistent;45;Reject;Evasive;68;Reject;Persistent;125;Reject;Normal;66;Reject;Persistent;28;Reject;Evasive;6,40;0;6;0;1;2;4;10;FALSE;TRUE;TRUE;Arbeitstätig;TRUE;10
+48B3841E-E04A-40FF-9C8E-FBACD3D3E92E;42;Accept;Evasive;47;Accept;Evasive;93;Accept;Evasive;260;Reject;Evasive;38;Accept;Evasive;61;Reject;Evasive;9,02;4;2;2/3;1/3;6;0;5;FALSE;TRUE;FALSE;Student;FALSE;7
+5055F40F-F4F9-4D8E-95A0-C91E902E00D0;86;Accept;Evasive;37;Reject;Evasive;96;Accept;Evasive;75;Reject;Evasive;68;Accept;Evasive;61;Accept;Evasive;7,05;4;2;2/3;1/3;6;0;7;FALSE;TRUE;FALSE;Student;TRUE;6
+5348CCC6-DC2C-4E21-95C3-6C017F82A156;118;Accept;Evasive;60;Accept;Evasive;100;Accept;Normal;106;Reject;Evasive;76;Accept;Evasive;61;Accept;Evasive;8,68;5;1;5/6;1/6;5;1;8;FALSE;FALSE;FALSE;Student;FALSE;6
+54AA93AC-830C-4C32-905D-A5B1F670F6CC;68;Accept;Evasive;39;Reject;Evasive;128;Reject;Evasive;65;Reject;Evasive;51;Accept;Evasive;50;Accept;Evasive;6,68;3;3;1/2;1/2;6;0;8;TRUE;FALSE;FALSE;Student;TRUE;10
+59399D70-3823-4E6B-98C6-EDC5CCDD40FF;28;Accept;Evasive;57;Accept;Evasive;88;Accept;Evasive;148;Accept;Evasive;56;Accept;Evasive;94;Accept;Evasive;7,85;6;0;1;0;6;0;6;TRUE;TRUE;FALSE;Arbeitstätig;TRUE;8
+62B55FD8-CF0D-455A-AA8D-5584E123430C;98;Reject;Persistent;48;Reject;Evasive;109;Reject;Persistent;63;Reject;Persistent;108;Reject;Normal;119;Reject;Evasive;9,08;0;6;0;1;2;4;9;FALSE;TRUE;FALSE;Arbeitstätig;FALSE;5
+63FBCB25-4F8B-4290-840F-2B15695E9D80;110;Accept;Evasive;44;Accept;Evasive;79;Accept;Evasive;52;Reject;Evasive;94;Accept;Evasive;81;Accept;Evasive;7,67;5;1;5/6;1/6;6;0;9;FALSE;FALSE;FALSE;Arbeitstätig;TRUE;7
+6EC44FF4-06C0-4493-9915-D6D52F0CBD9D;50;Accept;Evasive;42;Accept;Evasive;89;Accept;Evasive;61;Reject;Evasive;49;Accept;Evasive;74;Accept;Evasive;6,08;5;1;5/6;1/6;6;0;5;TRUE;FALSE;FALSE;Student;FALSE;7
+6F925620-C8AE-41C1-8B76-2D438EAD51E5;77;Reject;Persistent;43;Reject;Evasive;164;Accept;Normal;82;Accept;Normal;67;Reject;Persistent;62;Reject;Evasive;8,25;2;4;1/3;2/3;2;4;4;FALSE;FALSE;FALSE;Student;FALSE;1
+8CC9527A-84F5-49EF-8A58-F655FF6FB76D;95;Reject;Persistent;34;Reject;Evasive;58;Reject;Persistent;64;Reject;Persistent;40;Reject;Normal;44;Reject;Evasive;5,58;0;6;0;1;2;4;9;TRUE;TRUE;FALSE;Student;TRUE;10
+AF080AA3-FB28-4F73-9A8E-1F548F952E11;46;Accept;Evasive;23;Reject;Evasive;57;Reject;Evasive;62;Reject;Evasive;34;Reject;Normal;52;Reject;Evasive;4,57;1;5;1/6;5/6;5;1;3;TRUE;FALSE;FALSE;Student;TRUE;9
+BCE72A8D-CCF2-4A2C-AD31-1EFBC117805E;52;Reject;Persistent;104;Reject;Evasive;111;Accept;Persistent;67;Reject;Evasive;62;Reject;Normal;111;Reject;Evasive;8,45;1;5;1/6;5/6;3;3;7;FALSE;FALSE;FALSE;Student;TRUE;8
+C99BA8BF-8265-4341-AE15-AED9F6ABB9F8;46;Accept;Evasive;82;Accept;Evasive;86;Accept;Evasive;86;Accept;Evasive;85;Accept;Evasive;55;Accept;Evasive;7,33;6;0;1;0;6;0;3;FALSE;FALSE;FALSE;Student;TRUE;9
+F06D1BE6-34B2-4DBA-AF82-9A94F22BCC6C;89;Reject;Evasive;39;Reject;Evasive;74;Reject;Evasive;68;Reject;Evasive;53;Reject;Evasive;64;Reject;Evasive;6,45;0;6;0;1;6;0;8;TRUE;TRUE;FALSE;Student;TRUE;8
+FB2DE150-708C-4F12-9D18-80049C49D20C;53;Accept;Evasive;49;Accept;Evasive;57;Accept;Evasive;60;Accept;Evasive;59;Accept;Evasive;524;Accept;Evasive;13,37;6;0;1;0;6;0;2;FALSE;FALSE;FALSE;Student;TRUE;9

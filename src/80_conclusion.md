@@ -1,6 +1,6 @@
 # Conclusion
 
-In this research paper, we have covered how the principle of operant conditioning works and what negative reinforcement is. Furthermore, we have analyzed the types of consent mechanisms present on the 300 most popular websites and developed a theory on how they could be used to condition users of the web. A survey has been designed and conducted with 26 participants which revealed evidence for conditioning taking place in the real world.
+In this research paper, I have covered how the principle of operant conditioning works and what negative reinforcement is. Furthermore, I have analyzed the types of consent mechanisms present on the 300 most popular websites and developed a theory on how they could be used to condition users of the web. A survey has been designed and conducted with 26 participants which revealed evidence for conditioning taking place in the real world.
 
 Additionally, the survey showed that most users do not stick to one strategy in dealing with privacy policies — either accepting or rejecting it — and uncovered that an astonishingly low number of persons do interact with such policy notices for a prolonged period. Virtually no participant did discover a faked modal during the survey, showing further evidence that users are only acting based on the known and trained structure of such modals instead of reading them carefully.
 
